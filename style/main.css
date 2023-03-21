@@ -1,0 +1,72 @@
+/*the standard CSS comments will show up on the output
+.css file*/
+/* My Variables */
+/*My paragraph mixin */
+.list ul {
+  font-size: 30px;
+  font-family: Georgia;
+  color: #afb4c3;
+}
+.list ul li {
+  font-size: 24px;
+}
+.list .standard {
+  color: #c3beaf;
+}
+.list .different {
+  color: #504b3c;
+  background-color: #c3beaf;
+}
+
+/*media query for grid*/
+@media screen and (max-width: 1000px) {
+  .grid {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #5b5c5f;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #5b5c5f;
+  }
+}
+/*formats the grid item*/
+.grid-item {
+  background-color: #464646;
+  border: 1px solid #5b5b5f;
+  margin: 10px;
+}
+
+/* includes the mixin for my paragraph format */
+.textSection {
+  /* general formatting for the text */
+  /* the formatting is linked to the variables that I created */
+  /* the margins center are used to always the text in the middle */
+  margin-left: auto;
+  margin-right: auto;
+  /* gives the text a background color */
+  background-color: rgb(85, 82, 55);
+  /* changes the size, color, and font type of the text */
+  font-size: larger;
+  color: rgb(255, 251, 195);
+  font-family: Garamond;
+}
+
+.important {
+  /* formatting for my emphasis text */
+  /* changes the text to bold,italics, and a different color, to make that particular text stand out */
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(63, 216, 63);
+}
+
+.importantTwo {
+  /* formatting for my second emphasis text */
+  /* changes the text to bold,italics, and a different color, to make that particular text stand out */
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(79, 146, 235);
+}/*# sourceMappingURL=main.css.map */

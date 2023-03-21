@@ -1,0 +1,26 @@
+//typography
+$ulsize: 30px;
+$lisize: round($ulsize * 0.8);
+$ulfont: Georgia;
+
+//colors
+$ulcolor: #afb4c3;
+$licolor: complement($ulcolor);
+$licolordiff: invert($ulcolor);
+$bgcolorgrit: invert(grayscale($ulcolor));
+$bgcolorgr: mix($ulcolor, $bgcolorgrit, 20);
+$bgcolorborder: adjust-hue($bgcolorgr, 20);
+
+//screensize
+$screen: 1000px;
+
+/* My Variables */
+$fonttype: Garamond;
+$textcolor: rgb(255, 251, 195);
+$emphasisweight: bold;
+$textdecoration: italic;
+$emphasiscolorone: rgb(63, 216, 63);
+$emphasiscolortwo: rgb(79, 146, 235);
+$margins: auto;
+$backgroundcolortwo: rgb(85, 82, 55);
+$fontsize: larger;

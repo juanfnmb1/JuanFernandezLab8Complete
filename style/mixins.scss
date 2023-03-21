@@ -1,0 +1,75 @@
+//style mixin for list formatting
+@mixin liformat {
+  ul {
+    //calls the ulsize variable which is set by the number you put in
+    font-size: $ulsize;
+    //sets the font for ul (which is then inherited by li)
+    font-family: $ulfont;
+    //sets the color based on your choice
+    color: $ulcolor;
+
+    li {
+      //calls the lisize variable which is based on ulsize
+      font-size: $lisize;
+    }
+  }
+  .standard {
+    //sets the color based on ulcolor
+    color: $licolor;
+  }
+  .different {
+    //sets a different color based on ulcolor
+    color: $licolordiff;
+    background-color: $licolor;
+  }
+}
+//grid mixin
+@mixin grid {
+  /*media query for grid*/
+  @media screen and (max-width: $screen) {
+    .grid {
+      display: grid;
+      grid-template-columns: auto;
+      background-color: $bgcolorgr;
+    }
+  }
+  @media screen and (min-width: $screen) {
+    .grid {
+      display: grid;
+      grid-template-columns: auto auto;
+      background-color: $bgcolorgr;
+    }
+  }
+}
+
+/*My paragraph mixin */
+@mixin textformat {
+  .textSection {
+    /* general formatting for the text */
+    /* the formatting is linked to the variables that I created */
+    /* the margins center are used to always the text in the middle */
+    margin-left: $margins;
+    margin-right: $margins;
+    /* gives the text a background color */
+    background-color: $backgroundcolortwo;
+    /* changes the size, color, and font type of the text */
+    font-size: $fontsize;
+    color: $textcolor;
+    font-family: $fonttype;
+  }
+
+  .important {
+    /* formatting for my emphasis text */
+    /* changes the text to bold,italics, and a different color, to make that particular text stand out */
+    font-weight: $emphasisweight;
+    font-style: $textdecoration;
+    color: $emphasiscolorone;
+  }
+  .importantTwo {
+    /* formatting for my second emphasis text */
+    /* changes the text to bold,italics, and a different color, to make that particular text stand out */
+    font-weight: $emphasisweight;
+    font-style: $textdecoration;
+    color: $emphasiscolortwo;
+  }
+}
